@@ -1,2 +1,21 @@
 @use 'typography';
 @use 'header';
+
+
+// BASE 
+h2 {
+    margin-bottom: 2.25rem;
+}
+
+h3,
+h4 {
+    margin-bottom: 1.5rem;
+}
+
+h5 {
+    margin-bottom: .75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}

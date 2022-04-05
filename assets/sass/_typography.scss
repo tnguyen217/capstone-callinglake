@@ -1,3 +1,4 @@
+// BASE
 * {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -37,4 +38,9 @@ a {
     text-transform: uppercase;
     color: #0b6847;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
 }

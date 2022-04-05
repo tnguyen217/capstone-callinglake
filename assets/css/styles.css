@@ -37,6 +37,10 @@ a {
   text-transform: uppercase;
   color: #0b6847;
   cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -151,4 +155,20 @@ ul.main-menu .current_page_item > a {
     padding: 0;
     border: none;
   }
+}
+h2 {
+  margin-bottom: 2.25rem;
+}
+
+h3,
+h4 {
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
