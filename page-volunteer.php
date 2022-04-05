@@ -66,7 +66,7 @@ get_header();
 							<!-- Group -->
 							<?php $group = $position_one['group']; ?>
 							<?php if($group): ?>
-								<p><?php _e($group); ?></p>
+								<p class="postion-group"><?php _e($group); ?></p>
 							<?php endif; ?>
 
 							<!-- Name -->
@@ -78,13 +78,13 @@ get_header();
 							<!-- Description -->
 							<?php $description = $position_one['description']; ?>
 							<?php if($description): ?>
-								<p><?php _e($description); ?></p>
+								<p class="postion-text"><?php _e($description); ?></p>
 							<?php endif; ?>
 
 							<!-- Status -->
 							<?php $status = $position_one['status']; ?>
 							<?php if($status): ?>
-								<p><?php _e($status); ?></p>
+								<p class="postion-status"><?php _e($status); ?></p>
 							<?php endif; ?>
 							</div>
 					<?php endif; ?>
@@ -96,7 +96,7 @@ get_header();
 							<!-- Group -->
 							<?php $group = $position_two['group']; ?>
 							<?php if($group): ?>
-								<p><?php _e($group); ?></p>
+								<p class="postion-group"><?php _e($group); ?></p>
 							<?php endif; ?>
 
 							<!-- Name -->
@@ -108,13 +108,13 @@ get_header();
 							<!-- Description -->
 							<?php $description = $position_two['description']; ?>
 							<?php if($description): ?>
-								<p><?php _e($description); ?></p>
+								<p class="postion-text"><?php _e($description); ?></p>
 							<?php endif; ?>
 
 							<!-- Status -->
 							<?php $status = $position_two['status']; ?>
 							<?php if($status): ?>
-								<p><?php _e($status); ?></p>
+								<p class="postion-status"><?php _e($status); ?></p>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
@@ -126,7 +126,7 @@ get_header();
 							<!-- Group -->
 							<?php $group = $position_three['group']; ?>
 							<?php if($group): ?>
-								<p><?php _e($group); ?></p>
+								<p class="postion-group"><?php _e($group); ?></p>
 							<?php endif; ?>
 
 							<!-- Name -->
@@ -138,13 +138,13 @@ get_header();
 							<!-- Description -->
 							<?php $description = $position_three['description']; ?>
 							<?php if($description): ?>
-								<p><?php _e($description); ?></p>
+								<p class="postion-text"><?php _e($description); ?></p>
 							<?php endif; ?>
 
 							<!-- Status -->
 							<?php $status = $position_three['status']; ?>
 							<?php if($status): ?>
-								<p><?php _e($status); ?></p>
+								<p class="postion-status"><?php _e($status); ?></p>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
@@ -156,7 +156,7 @@ get_header();
 							<!-- Group -->
 							<?php $group = $position_four['group']; ?>
 							<?php if($group): ?>
-								<p><?php _e($group); ?></p>
+								<p class="postion-group"><?php _e($group); ?></p>
 							<?php endif; ?>
 
 							<!-- Name -->
@@ -168,13 +168,13 @@ get_header();
 							<!-- Description -->
 							<?php $description = $position_four['description']; ?>
 							<?php if($description): ?>
-								<p><?php _e($description); ?></p>
+								<p class="postion-text"><?php _e($description); ?></p>
 							<?php endif; ?>
 
 							<!-- Status -->
 							<?php $status = $position_four['status']; ?>
 							<?php if($status): ?>
-								<p><?php _e($status); ?></p>
+								<p class="postion-status"><?php _e($status); ?></p>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
