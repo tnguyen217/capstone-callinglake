@@ -27,7 +27,9 @@ get_header();
 					</div>
 				<?php endif; ?>
 
-				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+				<div class="banner-title">
+					<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+				</div>
 
 				<!-- Banner Text -->
 				<?php $banner_text = get_field('banner_text'); ?>
