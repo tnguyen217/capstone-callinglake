@@ -61,22 +61,22 @@ a:hover {
   color: #fff;
 }
 
-.join-us form p:last-of-type {
+form p:last-of-type {
   text-align: right;
 }
-.join-us form label {
+form label {
   font: 600 1.25rem/1 "Open Sans", sans-serif;
   text-transform: lowercase;
   color: #8aa3de;
 }
-.join-us form input::placeholder,
-.join-us form textarea::placeholder {
+form input::placeholder,
+form textarea::placeholder {
   font: 300 1.125rem/1 "Open Sans", sans-serif;
   letter-spacing: 0.5px;
   font-style: italic;
   color: #8a8a8a;
 }
-.join-us form input[type=submit] {
+form input[type=submit] {
   font: 700 1.125rem/1 "Open Sans", sans-serif;
   letter-spacing: 0.5px;
   text-transform: lowercase;
@@ -343,17 +343,17 @@ textarea {
   border-radius: 24px 0 0 24px;
 }
 
-.join-us form {
+form {
   margin-top: 2.25rem;
 }
-.join-us form p {
+form p {
   margin-bottom: 2rem;
   position: relative;
 }
-.join-us form p:last-of-type span {
+form p:last-of-type span {
   display: block;
 }
-.join-us form label {
+form label {
   background-color: #fff;
   padding: 0 0.5rem;
   position: absolute;
@@ -361,13 +361,13 @@ textarea {
   left: 0.5rem;
   z-index: 99;
 }
-.join-us form input,
-.join-us form textarea {
+form input,
+form textarea {
   border: 1.5px solid #8aa3de;
   border-radius: 3px;
   padding: 1.125rem 1rem;
 }
-.join-us form input[type=submit] {
+form input[type=submit] {
   background-color: #8aa3de;
   padding: 0.75rem 2.5rem;
 }
