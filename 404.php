@@ -14,19 +14,20 @@ get_header();
 
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'calling-lake' ); ?></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Oh no!', 'calling-lake' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'calling-lake' ); ?></p>
+				<p><?php esc_html_e( 'It looks like you\'ve gotten lost on our site!', 'calling-lake' ); ?></p>
+				<a href="front-page.php">Bring Me Home!</a>
 
-					<?php
+					<!-- <?php
 					get_search_form();
 
 					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+					?> -->
 
-					<div class="widget widget_categories">
+					<!-- <div class="widget widget_categories">
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'calling-lake' ); ?></h2>
 						<ul>
 							<?php
@@ -41,15 +42,15 @@ get_header();
 							);
 							?>
 						</ul>
-					</div><!-- .widget -->
+					</div>.widget -->
 
-					<?php
+					<!-- <?php
 					/* translators: %1$s: smiley */
 					$calling_lake_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'calling-lake' ), convert_smilies( ':)' ) ) . '</p>';
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$calling_lake_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+					?> -->
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->

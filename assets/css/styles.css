@@ -201,6 +201,15 @@ ul.main-menu .current_page_item > a {
     border: none;
   }
 }
+.footer-top {
+  background-color: #2a2e2d;
+}
+
+.footer-top a,
+.footer-top p {
+  color: #fff;
+}
+
 h3,
 h4 {
   margin-bottom: 1.5rem;
