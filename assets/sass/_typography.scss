@@ -44,3 +44,51 @@ a {
         text-decoration: none;
     }
 }
+
+
+
+// VOLUNTEER
+.position-group {
+    font: 700 .875rem 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #8aa3de;
+}
+
+.position-status {
+    font: 700 1rem/1 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.join-us {
+    form {
+        p {
+            &:last-of-type {
+                text-align: right;
+            }
+        }
+
+        label {
+            font: 600 1.25rem/1 'Open Sans', sans-serif;
+            text-transform: lowercase;
+            color: #8aa3de;
+        }
+    
+        input, 
+        textarea {
+            &::placeholder {
+                font: 300 1.125rem/1 'Open Sans', sans-serif;
+                letter-spacing: .5px;
+                font-style: italic;
+                color: #8a8a8a;
+            }
+        }
+    
+        input[type=submit] {
+            font: 700 1.125rem/1 'Open Sans', sans-serif;
+            letter-spacing: .5px;
+            text-transform: lowercase;
+            color: #fff;
+        }
+    }
+}

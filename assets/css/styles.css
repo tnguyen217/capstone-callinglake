@@ -43,6 +43,40 @@ a:hover {
   text-decoration: none;
 }
 
+.position-group {
+  font: 700 0.875rem "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #8aa3de;
+}
+
+.position-status {
+  font: 700 1rem/1 "Open Sans", sans-serif;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.join-us form p:last-of-type {
+  text-align: right;
+}
+.join-us form label {
+  font: 600 1.25rem/1 "Open Sans", sans-serif;
+  text-transform: lowercase;
+  color: #8aa3de;
+}
+.join-us form input::placeholder,
+.join-us form textarea::placeholder {
+  font: 300 1.125rem/1 "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  color: #8a8a8a;
+}
+.join-us form input[type=submit] {
+  font: 700 1.125rem/1 "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  color: #fff;
+}
+
 header {
   position: relative;
 }
@@ -156,10 +190,6 @@ ul.main-menu .current_page_item > a {
     border: none;
   }
 }
-h2 {
-  margin-bottom: 2.25rem;
-}
-
 h3,
 h4 {
   margin-bottom: 1.5rem;
@@ -213,4 +243,82 @@ textarea {
   padding: 0 1rem;
   position: absolute;
   top: 16.25rem;
+}
+.banner-title h2 {
+  position: relative;
+  z-index: 99;
+}
+
+.title-bg {
+  background-color: #fff;
+  opacity: 0.65;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.recruiting,
+.training,
+.join-us {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.positions {
+  margin-top: 3rem;
+}
+
+.position-card {
+  background-color: #fff;
+  padding: 2.25rem 0 2.25rem 1.5rem;
+  margin-bottom: 2.25rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(86, 86, 86, 0.15);
+}
+.position-card h4 {
+  padding-right: 1.5rem;
+}
+.position-card p {
+  padding-right: 1.5rem;
+}
+
+.position-status {
+  background-color: #8aa3de;
+  max-width: fit-content;
+  margin: 3rem 0 0 auto;
+  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  border-radius: 24px 0 0 24px;
+}
+
+.join-us form {
+  margin-top: 2.25rem;
+}
+.join-us form p {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.join-us form p:last-of-type span {
+  display: block;
+}
+.join-us form label {
+  background-color: #fff;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  z-index: 99;
+}
+.join-us form input,
+.join-us form textarea {
+  border: 1.5px solid #8aa3de;
+  border-radius: 3px;
+  padding: 1.125rem 1rem;
+}
+.join-us form input[type=submit] {
+  background-color: #8aa3de;
+  padding: 0.75rem 2.5rem;
 }
