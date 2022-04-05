@@ -16,6 +16,25 @@ p {
     margin-bottom: 1rem;
 }
 
+a {
+    display: block;
+    cursor: pointer;
+}
+
+.learn-more {
+    background-color: #fff;
+    border: 1.5px solid #0b6847;
+    padding: .5rem 1.25rem;
+    border-radius: 3px;
+    width: fit-content;    
+    margin-top: 2.25rem;
+
+
+    &:hover {
+        background-color: #0b6847;
+    }
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -57,6 +76,7 @@ textarea {
 
 .banner-title {
     grid-column: 1/-1;
+    width: 100%;
     padding: 0 1rem;
     position: absolute;
     top: 16.25rem;
@@ -159,3 +179,35 @@ textarea {
 
 
 // GALLERY
+.gallery {
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+
+
+// PROGRAMS
+.programs {
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+.program-card {
+    background-color: #fff;
+    // padding: 2.25rem 1.5rem;
+    margin-bottom: 2.25rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(86, 86, 86, .15);
+}
+
+.program-card-img {
+    height: 16.25rem;
+
+    img {
+        border-radius: 3px 3px 0 0;
+    }
+}
+
+.program-card-info {
+    padding: 2.25rem 1.5rem;
+}
