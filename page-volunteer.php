@@ -72,7 +72,7 @@ get_header();
 							<!-- Name -->
 							<?php $name = $position_one['name']; ?>
 							<?php if($name): ?>
-								<p><?php _e($name); ?></p>
+								<h4><?php _e($name); ?></h4>
 							<?php endif; ?>
 
 							<!-- Description -->
@@ -102,7 +102,7 @@ get_header();
 							<!-- Name -->
 							<?php $name = $position_two['name']; ?>
 							<?php if($name): ?>
-								<p><?php _e($name); ?></p>
+								<h4><?php _e($name); ?></h4>
 							<?php endif; ?>
 
 							<!-- Description -->
@@ -132,7 +132,7 @@ get_header();
 							<!-- Name -->
 							<?php $name = $position_three['name']; ?>
 							<?php if($name): ?>
-								<p><?php _e($name); ?></p>
+								<h4><?php _e($name); ?></h4>
 							<?php endif; ?>
 
 							<!-- Description -->
@@ -162,7 +162,7 @@ get_header();
 							<!-- Name -->
 							<?php $name = $position_four['name']; ?>
 							<?php if($name): ?>
-								<p><?php _e($name); ?></p>
+								<h4><?php _e($name); ?></h4>
 							<?php endif; ?>
 
 							<!-- Description -->
