@@ -19,11 +19,12 @@
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
     "dir-archiver": "^1.1.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
     "node-sass": "^7.0.1",
     "rtlcss": "^3.5.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.10"
   },
   "rtlcssConfig": {
     "options": {
@@ -45,8 +46,5 @@
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
-  },
-  "dependencies": {
-    "gulp": "^4.0.2"
   }
 }

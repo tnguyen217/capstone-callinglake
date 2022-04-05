@@ -50,6 +50,8 @@ function calling_lake_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'calling-lake' ),
+			'main-menu' => esc_html__( 'Main Menu', 'calling-lake' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'calling-lake' )
 		)
 	);
 
@@ -131,6 +133,71 @@ function calling_lake_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	// Header Donate Btn
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Header Donate Btn', 'calling-lake' ),
+			'id'            => 'donate-btn',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+
+	// Footer Get Involved
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Col 1', 'calling-lake' ),
+			'id'            => 'footer-col-1',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+
+	// Footer Programs
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Col 2', 'calling-lake' ),
+			'id'            => 'footer-col-2',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+
+	// Footer Contact
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Col 3', 'calling-lake' ),
+			'id'            => 'footer-col-3',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+
+	// Footer Connect
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Col 4', 'calling-lake' ),
+			'id'            => 'footer-col-4',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
 }
 add_action( 'widgets_init', 'calling_lake_widgets_init' );
 
@@ -151,6 +218,8 @@ function calling_lake_scripts() {
 
 	wp_enqueue_script( 'calling-lake-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '3.6.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
