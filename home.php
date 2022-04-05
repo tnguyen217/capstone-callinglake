@@ -64,7 +64,7 @@ get_header();
 							<?php the_content(); ?>
 							
 							<!-- Learn More -->
-							<a class="learn-more" href="<?php the_permalink(); ?>">learn more</a>
+							<a class="btn-link" href="<?php the_permalink(); ?>">learn more</a>
 
 							<?php //get_template_part( 'template-parts/content', 'page' ); ?>
 						</div>
