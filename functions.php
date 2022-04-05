@@ -209,13 +209,15 @@ function calling_lake_scripts() {
 	wp_style_add_data( 'calling-lake-style', 'rtl', 'replace' );
 
 	//GOOGLE FONTS
-    // wp_enqueue_style('oxygen','https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap',false);
+    wp_enqueue_style('Ubuntu','https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap',false);
+    wp_enqueue_style('Open Sans','https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap',false);
 
 	// STYLE
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'reset', get_template_directory_uri() . '/assets/css/reset.css') ;
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css') ;
 
+	// JS
 	wp_enqueue_script( 'calling-lake-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
