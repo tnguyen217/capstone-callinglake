@@ -1,8 +1,27 @@
 .footer-top {
 	background-color: #2a2e2d;
+    text-align: center;
+    padding: 8rem 0;
 }
 
 .footer-top a,
 .footer-top p {
 	color: #fff;
+}
+
+.site-info {
+    text-align: center;
+    padding-top: 2.4rem
+}
+
+.policy {
+    display: flex;
+}
+
+@media screen and (min-width: 900px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+  /*     align-items: center; */
+    }
 }

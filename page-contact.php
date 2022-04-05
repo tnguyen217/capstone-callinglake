@@ -39,7 +39,12 @@ get_header();
 			</section>
 			
             <section>
-                
+                <!-- Map Widget -->
+				<div class="map widget">
+					<?php if(is_active_sidebar('map-widget')):?>
+						<?php dynamic_sidebar('map-widget'); ?>
+					<?php endif; ?>
+				</div>
             </section>
 			
 
