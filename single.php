@@ -52,7 +52,7 @@ get_header();
 							<?php 
 								$img_url = $image_one['url'];
 							?>
-							<div class="program-single-img-one">
+							<div class="program-single-img program-single-img-one">
 								<img src="<?php print_r(esc_url($img_url)); ?>">
 							</div>
 						<?php endif; ?>
@@ -63,7 +63,7 @@ get_header();
 							<?php 
 								$img_url = $image_two['url'];
 							?>
-							<div class="program-single-img-two">
+							<div class="program-single-img program-single-img-two">
 								<img src="<?php print_r(esc_url($img_url)); ?>">
 							</div>
 						<?php endif; ?>
@@ -74,10 +74,11 @@ get_header();
 							<?php 
 								$img_url = $image_three['url'];
 							?>
-							<div class="program-single-img-three">
+							<div class="program-single-img program-single-img-three">
 								<img src="<?php print_r(esc_url($img_url)); ?>">
 							</div>
 						<?php endif; ?>
+			
 						
 						<!-- Text -->
 						<?php $section_one_text = $program_info_section_one['section_one_text']; ?>
@@ -169,7 +170,7 @@ get_header();
 							<?php 
 								$img_url = $image_one['url'];
 							?>
-							<div class="program-single-img-one">
+							<div class="program-single-img program-single-img-one">
 								<img src="<?php print_r(esc_url($img_url)); ?>">
 							</div>
 						<?php endif; ?>
@@ -180,7 +181,7 @@ get_header();
 							<?php 
 								$img_url = $image_two['url'];
 							?>
-							<div class="program-single-img-two">
+							<div class="program-single-img program-single-img-two">
 								<img src="<?php print_r(esc_url($img_url)); ?>">
 							</div>
 						<?php endif; ?>
