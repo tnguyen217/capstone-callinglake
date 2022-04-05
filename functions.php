@@ -51,7 +51,10 @@ function calling_lake_setup() {
 		array(
 			'menu-1' => esc_html__( 'Primary', 'calling-lake' ),
 			'main-menu' => esc_html__( 'Main Menu', 'calling-lake' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'calling-lake' )
+			'footer-menu-1' => esc_html__( 'Footer Menu 1', 'calling-lake' ),
+			'footer-menu-2' => esc_html__( 'Footer Menu 2', 'calling-lake' ),
+			'footer-menu-3' => esc_html__( 'Footer Menu 3', 'calling-lake' ),
+			'footer-menu-4' => esc_html__( 'Footer Menu 4', 'calling-lake' ),
 		)
 	);
 
@@ -152,7 +155,7 @@ function calling_lake_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Col 1', 'calling-lake' ),
 			'id'            => 'footer-col-1',
-			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'description'   => esc_html__( 'Footer: Get Involved', 'calling-lake' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5 class="widget-title">',
@@ -165,7 +168,7 @@ function calling_lake_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Col 2', 'calling-lake' ),
 			'id'            => 'footer-col-2',
-			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'description'   => esc_html__( 'Footer: Programs', 'calling-lake' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5 class="widget-title">',
@@ -178,7 +181,7 @@ function calling_lake_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Col 3', 'calling-lake' ),
 			'id'            => 'footer-col-3',
-			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'description'   => esc_html__( 'Footer: Contact', 'calling-lake' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5 class="widget-title">',
@@ -191,7 +194,7 @@ function calling_lake_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Col 4', 'calling-lake' ),
 			'id'            => 'footer-col-4',
-			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'description'   => esc_html__( 'Footer: Connect', 'calling-lake' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5 class="widget-title">',
