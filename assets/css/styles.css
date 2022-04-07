@@ -39,14 +39,20 @@ a {
 a:hover {
   text-decoration: none;
 }
+a:visited {
+  color: #2a2e2d;
+}
 
-.learn-more {
+.btn-link {
   font: 700 1rem "Ubuntu", sans-serif;
   text-transform: uppercase;
   color: #0b6847;
 }
-.learn-more:hover {
+.btn-link:hover {
   color: #fff;
+}
+.btn-link:visited {
+  color: #0b6847;
 }
 
 .position-group {
@@ -61,22 +67,22 @@ a:hover {
   color: #fff;
 }
 
-form p:last-of-type {
+.join-us form p:last-of-type {
   text-align: right;
 }
-form label {
+.join-us form label {
   font: 600 1.25rem/1 "Open Sans", sans-serif;
   text-transform: lowercase;
   color: #8aa3de;
 }
-form input::placeholder,
-form textarea::placeholder {
+.join-us form input::placeholder,
+.join-us form textarea::placeholder {
   font: 300 1.125rem/1 "Open Sans", sans-serif;
   letter-spacing: 0.5px;
   font-style: italic;
   color: #8a8a8a;
 }
-form input[type=submit] {
+.join-us form input[type=submit] {
   font: 700 1.125rem/1 "Open Sans", sans-serif;
   letter-spacing: 0.5px;
   text-transform: lowercase;
@@ -401,17 +407,17 @@ textarea {
   border-radius: 24px 0 0 24px;
 }
 
-form {
+.join-us form {
   margin-top: 2.25rem;
 }
-form p {
+.join-us form p {
   margin-bottom: 2rem;
   position: relative;
 }
-form p:last-of-type span {
+.join-us form p:last-of-type span {
   display: block;
 }
-form label {
+.join-us form label {
   background-color: #fff;
   padding: 0 0.5rem;
   position: absolute;
@@ -419,13 +425,13 @@ form label {
   left: 0.5rem;
   z-index: 99;
 }
-form input,
-form textarea {
+.join-us form input,
+.join-us form textarea {
   border: 1.5px solid #8aa3de;
   border-radius: 3px;
   padding: 1.125rem 1rem;
 }
-form input[type=submit] {
+.join-us form input[type=submit] {
   background-color: #8aa3de;
   padding: 0.75rem 2.5rem;
 }

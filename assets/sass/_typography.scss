@@ -40,15 +40,23 @@ a {
     &:hover {
         text-decoration: none;
     }
+
+    &:visited {
+        color: #2a2e2d;
+    }
 }
 
-.learn-more {
+.btn-link {
     font: 700 1rem 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #0b6847;
 
     &:hover {
         color: #fff;
+    }
+
+    &:visited {
+        color: #0b6847;
     }
 }
 
@@ -67,7 +75,7 @@ a {
     color: #fff;
 }
 
-// .join-us {
+.join-us {
     form {
         p {
             &:last-of-type {
@@ -98,7 +106,7 @@ a {
             color: #fff;
         }
     }
-// }
+}
 
 
 
