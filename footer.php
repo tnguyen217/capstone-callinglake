@@ -32,32 +32,34 @@
 				<?php endif; ?>
 			</div>
 
-			<!-- Get Involved -->
-			<div class="footer-get-involved">
-				<?php if(is_active_sidebar('footer-col-1')):?>
-					<?php dynamic_sidebar('footer-col-1'); ?>
-				<?php endif; ?>
-			</div>
-			
-			<!-- Programs -->
-			<div class="footer-programs">
-				<?php if(is_active_sidebar('footer-col-2')):?>
-					<?php dynamic_sidebar('footer-col-2'); ?>
-				<?php endif; ?>
-			</div>
-			
-			<!-- Contact -->
-			<div class="footer-contact">
-				<?php if(is_active_sidebar('footer-col-3')):?>
-					<?php dynamic_sidebar('footer-col-3'); ?>
-				<?php endif; ?>
-			</div>
-
-			<!-- Connect -->
-			<div class="footer-social">
-				<?php if(is_active_sidebar('footer-col-4')):?>
-					<?php dynamic_sidebar('footer-col-4'); ?>
-				<?php endif; ?>
+			<div class="footer-links">
+				<!-- Get Involved -->
+				<div class="footer-get-involved">
+					<?php if(is_active_sidebar('footer-col-1')):?>
+						<?php dynamic_sidebar('footer-col-1'); ?>
+					<?php endif; ?>
+				</div>
+				
+				<!-- Programs -->
+				<div class="footer-programs">
+					<?php if(is_active_sidebar('footer-col-2')):?>
+						<?php dynamic_sidebar('footer-col-2'); ?>
+					<?php endif; ?>
+				</div>
+				
+				<!-- Contact -->
+				<div class="footer-contact">
+					<?php if(is_active_sidebar('footer-col-3')):?>
+						<?php dynamic_sidebar('footer-col-3'); ?>
+					<?php endif; ?>
+				</div>
+	
+				<!-- Connect -->
+				<div class="footer-social">
+					<?php if(is_active_sidebar('footer-col-4')):?>
+						<?php dynamic_sidebar('footer-col-4'); ?>
+					<?php endif; ?>
+				</div>
 			</div>
 
 		</div>

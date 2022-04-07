@@ -38,7 +38,20 @@ get_header();
 				<?php endif; ?>
 			</section>
 			
-            <section>
+            <section class="contact-us">
+
+				<!-- Title -->
+				<?php $contact_us_title = get_field('contact_us_title'); ?>
+				<?php if($contact_us_title): ?>
+					<h3><?php _e($contact_us_title); ?></h3>
+				<?php endif; ?>
+
+				<!-- Text -->
+				<?php $contact_us_text = get_field('contact_us_text'); ?>
+				<?php if($contact_us_text): ?>
+					<p><?php _e($contact_us_text); ?></p>
+				<?php endif; ?>
+
 				<div class="contact-form">
 					<!-- Contact Us Form -->
 					<?php $contact_us_form = get_field('contact_us_form'); ?>
@@ -47,13 +60,16 @@ get_header();
 					<?php endif; ?>
 				</div>
 
-                <!-- Map Widget -->
+            </section>
+
+			<section class="contact-map">
+				<!-- Map Widget -->
 				<div class="map widget">
 					<?php if(is_active_sidebar('map-widget')):?>
 						<?php dynamic_sidebar('map-widget'); ?>
 					<?php endif; ?>
 				</div>
-            </section>
+			</section>
 			
 
 		<?php else : ?>
