@@ -15,7 +15,7 @@ get_header();
 		<?php if ( have_posts() ) :?>
 
 			<!-- Banner -->
-			<section class="banner">
+			<section class="banner banner-single">
 				<?php $banner_image = get_field('banner_image'); ?>
 				<?php if($banner_image): ?>
 					<?php 
@@ -86,38 +86,6 @@ get_header();
 							<p><?php _e($section_one_text); ?></p>
 						<?php endif; ?>
 
-						<!-- List -->
-						<?php $section_one_list = $program_info_section_one['section_one_list']; ?>
-						<?php if($section_one_list): ?>
-
-							<ul>
-								<!-- Item One -->
-								<?php $item_one = $section_one_list['item_one']; ?>
-								<?php if($item_one): ?>
-									<li><?php _e($item_one); ?></li>
-								<?php endif; ?>
-
-								<!-- Item Two -->
-								<?php $item_two = $section_one_list['item_two']; ?>
-								<?php if($item_two): ?>
-									<li><?php _e($item_two); ?></li>
-								<?php endif; ?>
-
-								<!-- Item Three -->
-								<?php $item_three = $section_one_list['item_three']; ?>
-								<?php if($item_three): ?>
-									<li><?php _e($item_three); ?></li>
-								<?php endif; ?>
-
-								<!-- Item Four -->
-								<?php $item_four = $section_one_list['item_four']; ?>
-								<?php if($item_four): ?>
-									<li><?php _e($item_four); ?></li>
-								<?php endif; ?>
-							</ul>
-
-						<?php endif; ?>
-
 					</div>
 				<?php endif; ?>
 
@@ -125,12 +93,6 @@ get_header();
 				<?php $program_info_section_two = get_field('program_info_section_two'); ?>
 				<?php if($program_info_section_two): ?>
 					<div class="program-single-section-two">
-
-						<!-- Text -->
-						<?php $section_two_text = $program_info_section_two['section_two_text']; ?>
-						<?php if($section_two_text): ?>
-							<p><?php _e($section_two_text); ?></p>
-						<?php endif; ?>
 
 						<!-- List -->
 						<?php $section_two_list = $program_info_section_two['section_two_list']; ?>
