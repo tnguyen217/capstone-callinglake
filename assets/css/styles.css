@@ -136,6 +136,7 @@ header nav {
 
 .show nav {
   max-height: 20rem;
+  z-index: 999;
 }
 
 ul.main-menu {

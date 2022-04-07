@@ -39,6 +39,14 @@ get_header();
 			</section>
 			
             <section>
+				<div class="contact-form">
+					<!-- Contact Us Form -->
+					<?php $contact_us_form = get_field('contact_us_form'); ?>
+					<?php if($contact_us_form): ?>
+						<?php echo do_shortcode($contact_us_form); ?>
+					<?php endif; ?>
+				</div>
+
                 <!-- Map Widget -->
 				<div class="map widget">
 					<?php if(is_active_sidebar('map-widget')):?>
