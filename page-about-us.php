@@ -70,7 +70,7 @@ get_header();
         <?php endif; ?>
 
         <section class=" about-us cards">
-            <div class="about-us-card">
+            <div class="about-us-card card1">
                 <div class="card-img">
                     <?php $swiftwaterimg = get_field('swift_water_img'); ?>
                     <?php if ($swiftwaterimg) : ?>
@@ -88,14 +88,13 @@ get_header();
                 <?php if ($swiftwatertext) : ?>
                     <p><?php _e($swiftwatertext); ?></p>
                 <?php endif; ?>
-
             </div>
             </div>
 
-            <div class="about-us-card">
+            <div class="about-us-card card2">
                 <div class="card-img">
-                    <?php $swiftwaterimg = get_field('still_water_img'); ?>
-                    <?php if ($swiftwaterimg) : ?>
+                    <?php $stillwaterimg = get_field('still_water_img'); ?>
+                    <?php if ($stillwaterimg) : ?>
                         <img src="<?php print_r(esc_url($img_url)); ?>">
                 </div>
             <?php endif; ?>
@@ -114,7 +113,7 @@ get_header();
             </div>
             </div>
 
-            <div class="card3">
+            <div class="about-us-card card3">
                 <div class="card-img">
                     <?php $backcountryimg = get_field('backcountry_img'); ?>
                     <?php if ($backcountryimg) : ?>
@@ -136,7 +135,7 @@ get_header();
             </div>
             </div>
 
-            <div class="about-us-card">
+            <div class="about-us-card card4">
                 <div class="card-img">
                     <?php $droneimg = get_field('drone_img'); ?>
                     <?php if ($droneimg) : ?>
@@ -155,6 +154,7 @@ get_header();
                     <p><?php _e($dronetext); ?></p>
                 <?php endif; ?>
 
+            </div>
             </div>
             </div>
         </section>

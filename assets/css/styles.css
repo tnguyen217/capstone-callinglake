@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kcastor 
+tnguyen217
+/
+capstone-callinglake
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+capstone-callinglake/assets/css/styles.css
+@Max4str
+Max4str adjusted line height on mobile header navigation
+Latest commit 1715ecc 8 hours ago
+ History
+ 3 contributors
+@tnguyen217@Max4str@kcastor
+1312 lines (1170 sloc)  21.4 KB
+   
 * {
   font-size: 100%;
 }
@@ -774,7 +803,9 @@ input[type=submit] {
 .join-us,
 .programs,
 .program-single,
-.gallery {
+.gallery,
+.about,
+.donate {
     padding: 0 2rem;
     margin-bottom: 6rem;
   }
@@ -893,7 +924,9 @@ input[type=submit] {
 .training,
 .join-us,
 .join-us form,
-.program-card {
+.program-card,
+.about-us-card,
+.donate {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
@@ -1013,6 +1046,33 @@ input[type=submit] {
   .banner-single p {
     margin-bottom: 1.75rem;
   }
+
+
+
+
+  .about-us-card {
+    margin-bottom: 3rem;
+  }
+
+  .about-us-card-img {
+    grid-column: 1/7;
+  }
+
+  .card-content {
+    grid-column: 7/-1;
+    padding: 0 3rem;
+  }
+
+  .about-us-card:last-of-type .card-img {
+    grid-column: 7/-1;
+  }
+  .about-us-card:last-of-type .card-content {
+    grid-column: 1/7;
+    padding: 0 3rem;
+  }
+
+
+
 }
 @media screen and (min-width: 1200px) {
   .banner,
@@ -1150,6 +1210,27 @@ input[type=submit] {
     grid-row: 1/span 2;
     height: 32.5rem;
   }
+
+  .about-us-card {
+    margin-bottom: 5rem;
+  }
+
+  .card-content {
+    grid-column: 8/-2;
+    padding: 0;
+  }
+
+  .card-img img {
+    height: 30rem;
+  }
+
+  .program-card:last-of-type .card-content {
+    grid-column: 2/6;
+    padding: 0;
+  }
+
+
+
 }
 @media screen and (min-width: 1440px) {
   .banner,
@@ -1253,6 +1334,63 @@ input[type=submit] {
   .program-card-img {
     height: 35rem;
   }
+
+  .donate{
+	display:flex;
+		flex-wrap:wrap;
+}
+
+.donate-cheque{
+	display:flex;
+	flex-direction:column;
+	
+	width:50%;
+	padding:2%;
+	align-items:center;
+}
+.donate-cheque p{
+	width:70%;
+	padding-top:2%;
+}
+.donate-online{
+	width:50%;
+	padding:2%;
+}
+.donate-online h3{
+	padding-bottom:2%;
+}
+
+#give-form-277-wrap{
+	
+	width:70%;
+	align-content:right;
+}
+
+
+
+.who-we-are{
+	width:50%;
+
+}
+
+.about-us-card {
+  background-color: #fff;
+  margin-bottom: 2.25rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(86, 86, 86, 0.15);
+}
+
+.card-img {
+  height: 16.25rem;
+}
+.card-img img {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-content{
+  padding: 2.25rem 1.5rem;
+	width:50%;
+}
 }
 @media screen and (min-width: 1760px) {
   .banner,
