@@ -1,0 +1,50 @@
+.contact-us,
+.contact-map {
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+.contact-form {
+    form {
+        margin-top: 2.25rem;
+
+        p {
+            margin-bottom: 2rem;
+            position: relative;
+
+            &:last-of-type {
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        label {
+            background-color: #fff;
+            color: #0b6847;
+            padding: 0 .5rem;
+            position: absolute;
+            top: 1rem;
+            left: .5rem;
+            z-index: 99;
+        }
+
+        select {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 1.5px solid #0b6847;
+            border-radius: 3px;
+            padding: 1.125rem 1rem;
+        }
+
+        input[type=submit] {
+            background-color: #0b6847;
+            padding: .75rem 2.5rem;
+        }
+    }
+}

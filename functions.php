@@ -201,6 +201,19 @@ function calling_lake_widgets_init() {
 			'after_title'   => '</h5>',
 		)
 	);
+
+	// Map Widget
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Map Widget', 'calling-lake' ),
+			'id'            => 'map-widget',
+			'description'   => esc_html__( 'Map Widget', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
 }
 add_action( 'widgets_init', 'calling_lake_widgets_init' );
 

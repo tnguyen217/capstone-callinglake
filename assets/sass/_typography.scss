@@ -40,19 +40,17 @@ a {
     &:hover {
         text-decoration: none;
     }
-}
 
-.learn-more {
-    font: 700 1rem 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    color: #0b6847;
-
-    &:hover {
-        color: #fff;
+    &.btn-link {
+        font: 700 1rem 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        color: #0b6847;
+    
+        &:hover {
+            color: #fff;
+        }
     }
 }
-
-
 
 // VOLUNTEER
 .position-group {
@@ -108,4 +106,102 @@ a {
         width: 100%;
         height: 100%;
     }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 3.75rem;
+        color: #f8ce6b;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.25rem;
+    }
+
+    .position-group,
+    .position-status {
+        font-size: 1.125rem;
+    }
+
+    .banner-single {
+        h2 {
+            color: #8aa3de;
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+    }
+}
+
+
+
+// 1200PX
+@media screen and (min-width: 1200px) {
+    // BASE
+    a.btn-link {
+        color: #fff;
+
+        &:hover {
+            color: #0b6847;
+        }
+    }
+}
+
+
+
+// 1440PX
+@media screen and (min-width: 1440px) {
+    // BASE
+    body {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.75rem;
+    }
+
+
+
+    // VOLUNTEER
+    .join-us {
+        .wpcf7 {
+            label {
+                top: 1.5rem;
+            }
+
+            input[type=submit] {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+// 1760PX
+@media screen and (min-width: 1760px) {
+    h2 {
+        font-size: 6rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    .banner-single {
+        h2 {
+            font-size: 4.5rem;
+        }
+    }
+
 }

@@ -1,8 +1,30 @@
 .footer-top {
 	background-color: #2a2e2d;
+    text-align: center;
+    padding: 8rem 0;
+
+    a,
+    p {
+        color: #fff;
+    }
+
+    i {
+        color: #f8ce6b
+    }
 }
 
-.footer-top a,
-.footer-top p {
-	color: #fff;
+.site-info {
+    text-align: center;
+    padding-top: 2.4rem
 }
+
+.policy {
+    display: flex;
+}
+
+// @media screen and (min-width: 900px) {
+//     .footer-top {
+//         display: grid;
+//         grid-template-columns: repeat(5, 1fr);
+//     }
+// }

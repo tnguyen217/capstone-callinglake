@@ -1,17 +1,31 @@
 header {
 	position: relative;
+	z-index: 99999;
+
+	nav {
+		position: absolute;
+		width: 100vw;
+		left: 0;
+		background-color: #fff;
+		
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.5s ease-in-out;
+	}
 }
 
 .container > .logo {
 	display: none;
 }
 
-.logo img {
-	width: 6.8rem;
-}
+.logo {
+	img {
+		width: 6.8rem;
+	}
 
-.logo p {
-	display: none;
+	p {
+		display: none;
+	}
 }
 
 .sm-screens {
@@ -21,33 +35,23 @@ header {
 	padding: 1rem;
 }
 
-.toggle-icon:hover {
-	cursor: pointer;
-}
+.toggle-icon {
+	span {
+		width: 3.1rem;
+		height: 0.4rem;
+		display: block;
+		background: #000;
+		margin-bottom: 10px;
+		border-radius: 10rem;
+	}
 
-.toggle-icon span {
-    width: 3.1rem;
-    height: 0.4rem;
-    display: block;
-    background: #000;
-    margin-bottom: 10px;
-    border-radius: 10rem;
-}
-
-header nav {
-	position: absolute;
-	width: 100vw;
-	left: 0;
-	background-color: #fff;
-	
-	max-height: 0;
-	overflow: hidden;
-	transition: all 0.2s ease-in-out;
+	:hover {
+		cursor: pointer;
+	}
 }
 
 .show nav {
-	max-height: 20rem;
-	
+	max-height: 50rem;
 }
 
 ul.main-menu {
@@ -55,27 +59,35 @@ ul.main-menu {
 	margin: 0;
 	list-style: none;
 	text-align: center;
-	border-top: 1px solid black;
+	// border-top: 1px solid black;
+
+	a {
+		display: block;
+		padding: 1.5rem 0rem;
+		border-top: 1px solid #2a2e2d;
+		margin-inline: 1rem;
+		text-decoration: none;
+
+		:hover,
+		:focus {
+			cursor: pointer;
+			color: red;
+		}
+	}
+
+	.menu-item-154 {
+		background-color: #2a2e2d;
+		border-radius: 5px;
+		color: #f8ce6b;
+		margin-inline: 1rem;
+	}
+
+	.current_page_item > a {
+		text-decoration: underline;
+	}
 }
 
-ul.main-menu a {
-    display: block;
-/*     padding: 1.56rem 0rem; */
-    border-bottom: 1px solid black;
-    text-decoration: none;
-}
-
-ul.main-menu a:hover,
-ul.main-menu a:focus{
-	cursor: pointer;
-	color: red;
-}
-
-ul.main-menu .current_page_item > a {
-	text-decoration: underline;
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 	.sm-screens {
 		display: none;
 	}
@@ -106,10 +118,16 @@ ul.main-menu .current_page_item > a {
         border: none;
         padding: 0;
         gap: 2rem;
-    }
 
-    ul.main-menu a {
-        padding: 0;
+		a {
+			margin: 0;
+			padding: .5rem 0;
 			border: none;
-    }
+		}
+
+		.menu-item-154 {
+			padding: 0 1rem;
+		}
+	}
+
 }

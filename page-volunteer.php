@@ -266,7 +266,7 @@ get_header();
 						<?php endif; ?>
 
 						<!-- Image Two -->
-						<?php $image_Two = $join_us_images['image_two']; ?>
+						<?php $image_two = $join_us_images['image_two']; ?>
 						<?php if($image_two): ?>
 							<?php 
 								$img_url = $image_two['url'];
