@@ -53,8 +53,7 @@ function calling_lake_setup() {
 			'main-menu' => esc_html__( 'Main Menu', 'calling-lake' ),
 			'footer-menu-1' => esc_html__( 'Footer Menu 1', 'calling-lake' ),
 			'footer-menu-2' => esc_html__( 'Footer Menu 2', 'calling-lake' ),
-			'footer-menu-3' => esc_html__( 'Footer Menu 3', 'calling-lake' ),
-			'footer-menu-4' => esc_html__( 'Footer Menu 4', 'calling-lake' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'calling-lake' )
 		)
 	);
 
@@ -134,6 +133,19 @@ function calling_lake_widgets_init() {
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
+		)
+	);
+
+	// Header Donate Btn
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Header Donate Btn', 'calling-lake' ),
+			'id'            => 'donate-btn',
+			'description'   => esc_html__( 'Add widgets here.', 'calling-lake' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
 		)
 	);
 
@@ -237,7 +249,8 @@ function calling_lake_scripts() {
 	wp_enqueue_script( 'calling-lake-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '3.6.0', true );
+	// main.js script
+	// wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '3.6.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

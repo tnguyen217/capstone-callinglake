@@ -6,6 +6,16 @@ footer {
     text-align: center;
     padding: 4.8rem 0;
 
+    .logo {
+        width: 10rem;
+        margin-inline: auto;
+    }
+
+    .site-title,
+    .site-description {
+        display: none;
+    }
+
     a,
     p {
         color: #fff;

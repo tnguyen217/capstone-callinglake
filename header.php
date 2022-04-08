@@ -27,69 +27,59 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'calling-lake' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		
 		<div class="container flex-container">
 			<div class="logo">
-				<?php
-				the_custom_logo();
-				if ( is_front_page() && is_home() ) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-				endif;
-				$calling_lake_description = get_bloginfo( 'description', 'display' );
-				if ( $calling_lake_description || is_customize_preview() ) :
-					?>
-					<p class="site-description"><?php echo $calling_lake_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-				<?php endif; ?>
+				<?php if ( ! has_custom_logo() ) { ?>
+					<?php if ( is_front_page() && is_home() ) : ?>
+						<!-- if your page is set to front-page or blog display the site title (appearance > customize) -->
+						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+					<?php else : ?>
+					<!-- if your page is not set to front-page or blog display the site title (appearance > customize) -->
+					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+					<?php endif; ?>
+						<!-- otherwise display the custom logo. -->
+					<?php } else {
+						the_custom_logo();
+					}?>
 			</div>
 	
-			<!-- toggle icon -->
 			<div class="sm-screens">
-				<div class="logo">
-					<?php
-					the_custom_logo();
-					if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-					else :
-						?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-					endif;
-					$calling_lake_description = get_bloginfo( 'description', 'display' );
-					if ( $calling_lake_description || is_customize_preview() ) :
-						?>
-						<p class="site-description"><?php echo $calling_lake_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-					<?php endif; ?>
+				<div class="sm-logo">
+					<?php if ( ! has_custom_logo() ) { ?>
+						<?php if ( is_front_page() && is_home() ) : ?>
+							<!-- if your page is set to front-page or blog display the site title (appearance > customize) -->
+							<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+						<?php else : ?>
+						<!-- if your page is not set to front-page or blog display the site title (appearance > customize) -->
+						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+						<?php endif; ?>
+							<!-- otherwise display the custom logo. -->
+						<?php } else {
+							the_custom_logo();
+						}?>
 				</div>
 
+				<!-- toggle icon -->
 				<div class="toggle-icon">
-					<span></span>
-					<span></span>
-					<span></span>
+					<i class="fa-solid fa-bars"></i>
 				</div>
 			</div>
-
+	
 			<nav>
-				<?php
-					wp_nav_menu(
+				<?php 
+					wp_nav_menu (
+						// array of arguements
 						array(
 							'theme_location' => 'main-menu',
-							'container_class' => 'main-nav',
-							'container_id' => 'main-nav',
 							'menu_class' => 'main-menu',
-							'menu_id'        => 'main-menu',
-							'fallback_cb' => '',
+							'menu_id' => 'main-menu',
+							'fallback_cb' => ''
 						)
-					);
+					)
 				?>
 			</nav>
-
 		</div>
+
 		
 	</header><!-- #masthead -->
