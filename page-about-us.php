@@ -75,20 +75,21 @@ get_header();
                     <?php $swiftwaterimg = get_field('swift_water_img'); ?>
                     <?php if ($swiftwaterimg) : ?>
                         <img src="<?php print_r(esc_url($img_url)); ?>">
+                    <?php endif; ?>
                 </div>
-            <?php endif; ?>
-            <div class="card-content">
-                <!-- Title -->
-                <?php $swiftwatertitle = get_field('swift_water_title'); ?>
-                <?php if ($swiftwatertitle) : ?>
-                    <h4><?php _e($swiftwatertitle); ?></h4>
-                <?php endif; ?>
-                <!-- Text -->
-                <?php $swiftwatertext = get_field('swift_water_description'); ?>
-                <?php if ($swiftwatertext) : ?>
-                    <p><?php _e($swiftwatertext); ?></p>
-                <?php endif; ?>
-            </div>
+
+                <div class="card-content">
+                    <!-- Title -->
+                    <?php $swiftwatertitle = get_field('swift_water_title'); ?>
+                    <?php if ($swiftwatertitle) : ?>
+                        <h4><?php _e($swiftwatertitle); ?></h4>
+                    <?php endif; ?>
+                    <!-- Text -->
+                    <?php $swiftwatertext = get_field('swift_water_description'); ?>
+                    <?php if ($swiftwatertext) : ?>
+                        <p><?php _e($swiftwatertext); ?></p>
+                    <?php endif; ?>
+                </div>
             </div>
 
             <div class="about-us-card card2">
@@ -109,7 +110,6 @@ get_header();
                 <?php if ($stillwatertext) : ?>
                     <p><?php _e($stillwatertext); ?></p>
                 <?php endif; ?>
-
             </div>
             </div>
 
@@ -131,7 +131,6 @@ get_header();
                 <?php if ($backcountrytext) : ?>
                     <p><?php _e($backcountrytext); ?></p>
                 <?php endif; ?>
-
             </div>
             </div>
 
@@ -153,8 +152,6 @@ get_header();
                 <?php if ($dronetext) : ?>
                     <p><?php _e($dronetext); ?></p>
                 <?php endif; ?>
-
-            </div>
             </div>
             </div>
         </section>
