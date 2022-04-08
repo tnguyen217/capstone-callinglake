@@ -198,10 +198,14 @@ ul.main-menu {
   color: #f8ce6b;
 }
 ul.main-menu a {
-  line-height: 3;
+  line-height: 4;
 }
 ul.main-menu a:hover, ul.main-menu a:focus {
   color: #fff;
+}
+
+header .menu-item-153 a {
+  margin-bottom: 1rem;
 }
 
 header .menu-item-154 a {
