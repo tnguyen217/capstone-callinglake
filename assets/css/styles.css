@@ -605,7 +605,6 @@ input[type=submit] {
     padding: 0.75rem 3rem;
   }
 }
-<<<<<<< HEAD
 .program-single-section-one li {
   margin-bottom: 1rem;
 }
@@ -640,7 +639,6 @@ input[type=submit] {
 	
 	width 50%;
 	align-content:right;
-=======
 @media screen and (min-width: 768px) {
   .banner,
 .recruiting,
@@ -1024,6 +1022,37 @@ input[type=submit] {
     grid-row: 1/span 2;
     height: 32.5rem;
   }
+.donate{
+	display:flex;
+		flex-wrap:wrap;
+}
+
+.donate-cheque{
+	display:flex;
+	flex-direction:column;
+	
+	width:50%;
+	padding:2%;
+	align-items:center;
+}
+.donate-cheque p{
+	width:70%;
+	padding-top:2%;
+}
+.donate-online{
+	width:50%;
+	padding:2%;
+}
+.donate-online h3{
+	padding-bottom:2%;
+}
+
+#give-form-277-wrap{
+	
+	width:70%;
+	align-content:right;
+}
+  
 }
 @media screen and (min-width: 1440px) {
   .banner,
@@ -1183,5 +1212,4 @@ input[type=submit] {
   .program-single-section-two .program-single-img-two {
     height: 37.5rem;
   }
->>>>>>> a7fd3746ad5191a7578602dfbc3b8dfba531e7ba
 }
