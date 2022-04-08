@@ -190,7 +190,7 @@ header nav {
   width: 3.1rem;
   height: 0.4rem;
   display: block;
-  background: #000;
+  background: #2a2e2d;
   margin-bottom: 10px;
   border-radius: 10rem;
 }
@@ -222,12 +222,10 @@ ul.main-menu a :focus {
 }
 ul.main-menu .menu-item-154 {
   background-color: #2a2e2d;
+  border: 1px solid #2a2e2d;
   border-radius: 5px;
   color: #f8ce6b;
   margin-inline: 1rem;
-}
-ul.main-menu .current_page_item > a {
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 900px) {

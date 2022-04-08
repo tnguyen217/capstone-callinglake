@@ -81,16 +81,11 @@ ul.main-menu {
 		border-radius: 5px;
 		color: #f8ce6b;
 		margin-inline: 1rem;
-
-		:hover {
-			background-color: #f8ce6b;
-			color: #2a2e2d;
-		}
 	}
 
-	.current_page_item > a {
-		text-decoration: underline;
-	}
+	// .current_page_item > a {
+	// 	text-decoration: underline;
+	// }
 }
 
 @media screen and (min-width: 900px) {
