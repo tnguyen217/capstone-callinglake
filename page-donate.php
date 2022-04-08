@@ -53,7 +53,7 @@ get_header();
                 <!-- Text -->
                 <?php $cheque_text = get_field('donate_by_cheque_text'); ?>
                 <?php if ($cheque_text) : ?>
-                    <?php _e($cheque_text); ?>
+                    <p> <?php _e($cheque_text); ?></p>
                 <?php endif; ?>
 
             </div>
@@ -66,13 +66,15 @@ get_header();
                 <?php if ($online_title) : ?>
                     <h3><?php _e($online_title); ?></h3>
                 <?php endif; ?>
+
+            <?php endif; ?>
+
+
+            <!-- donate Form -->
+            <?php $donate_form = get_field('donate_form'); ?>
+            <?php if ($donate_form) : ?>
+                <?php echo do_shortcode($donate_form); ?>
+            <?php endif; ?>
+
             </div>
-        <?php endif; ?>
-
-
-        <!-- Join Us Form -->
-        <?php $donate_form = get_field('donate_form'); ?>
-        <?php if ($donate_form) : ?>
-            <?php echo do_shortcode($donate_form); ?>
-        <?php endif; ?>
         </section>
