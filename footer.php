@@ -32,7 +32,6 @@
 				<?php endif; ?>
 			</div>
 
-			<div class="footer-links">
 				<!-- Get Involved -->
 				<div class="footer-get-involved">
 					<?php if(is_active_sidebar('footer-col-1')):?>
@@ -60,7 +59,6 @@
 						<?php dynamic_sidebar('footer-col-4'); ?>
 					<?php endif; ?>
 				</div>
-			</div>
 
 		</div>
 

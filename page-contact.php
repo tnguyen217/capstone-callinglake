@@ -38,7 +38,8 @@ get_header();
 				<?php endif; ?>
 			</section>
 			
-            <section class="contact-us">
+			<!-- Contact Us -->
+			<section class="contact-us">
 
 				<!-- Title -->
 				<?php $contact_us_title = get_field('contact_us_title'); ?>
@@ -51,26 +52,25 @@ get_header();
 				<?php if($contact_us_text): ?>
 					<p><?php _e($contact_us_text); ?></p>
 				<?php endif; ?>
-
-				<div class="contact-form">
-					<!-- Contact Us Form -->
-					<?php $contact_us_form = get_field('contact_us_form'); ?>
-					<?php if($contact_us_form): ?>
-						<?php echo do_shortcode($contact_us_form); ?>
-					<?php endif; ?>
+	
+				<div class="contact-grid">
+					<div class="contact-form">
+						<!-- Contact Us Form -->
+						<?php $contact_us_form = get_field('contact_us_form'); ?>
+						<?php if($contact_us_form): ?>
+							<?php echo do_shortcode($contact_us_form); ?>
+						<?php endif; ?>
+					</div>
+	
+					<div class="contact-map">
+						<!-- Google Map -->
+						<?php if(is_active_sidebar('map-widget')):?>
+							<?php dynamic_sidebar('map-widget'); ?>
+						<?php endif; ?>
+					</div>
 				</div>
 
-            </section>
-
-			<section class="contact-map">
-				<!-- Map Widget -->
-				<div class="map widget">
-					<?php if(is_active_sidebar('map-widget')):?>
-						<?php dynamic_sidebar('map-widget'); ?>
-					<?php endif; ?>
-				</div>
-			</section>
-			
+			</section>			
 
 		<?php else : ?>
 			<?php get_template_part('template-parts/content', 'none'); ?>
