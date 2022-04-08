@@ -25,30 +25,30 @@
         <!-- programs -->
         <div class="home whoweare">
             <!-- Title -->
-            <?php $home_whoweare = $whowearetitle('about_us_header'); ?>
+            <?php $home_whoweare = get_field('about_us_header'); ?>
             <?php if ($whowearetitle) : ?>
                 <h3><?php _e($whowearetitle); ?></h3>
             <?php endif; ?>
             <!-- Text -->
-            <?php $whowearetext = $aboutustext('about_us_description'); ?>
+            <?php $whowearetext = get_field('about_us_description'); ?>
             <?php if ($whowearetext) : ?>
                 <p><?php _e($whowearetext); ?></p>
             <?php endif; ?>
 
         </div>
-        <!-- END: CARDS SECTION -->
+   
 
-        <section class="join">
+            <section class="join">
 
-            <!-- programs -->
-            <div class="join us card">
+            <!-- join -->
+            <div class="joinus card">
                 <!-- Title -->
-                <?php $joinus = $join('join_us_title'); ?>
+                <?php $joinus = get_field('join_us_title'); ?>
                 <?php if ($jointitle) : ?>
                     <h4><?php _e($jointitle); ?></h4>
                 <?php endif; ?>
                 <!-- Text -->
-                <?php $jointext = $jointext('join_us_text'); ?>
+                <?php $jointext = get_field('join_us_text'); ?>
                 <?php if ($jointext) : ?>
                     <p><?php _e($jointext); ?></p>
                 <?php endif; ?>
@@ -61,12 +61,12 @@
                 <!-- programs -->
                 <div class="programinfo">
                     <!-- Title -->
-                    <?php $programtitle = $programs('programs_title'); ?>
+                    <?php $programtitle = get_field('programs_title'); ?>
                     <?php if ($programtitle) : ?>
                         <h4><?php _e($programtitle); ?></h4>
                     <?php endif; ?>
                     <!-- Text -->
-                    <?php $programtext = $programs('programs_text'); ?>
+                    <?php $programtext = get_field('programs_text'); ?>
                     <?php if ($programtext) : ?>
                         <p><?php _e($programtext); ?></p>
                     <?php endif; ?>
@@ -76,14 +76,14 @@
                 <!-- hug a tree -->
                 <div class="program-card">
                     <div class="hugatree-content">
-                        <?php $hugatree_title = $hugatree('hug_a_tree_title'); ?>
+                        <?php $hugatree_title = get_field('hug_a_tree_title'); ?>
                         <?php if ($hugatree_title) : ?>
                             <h4><?php _e($hugatree_title); ?></h4>
                         <?php endif; ?>
 
 
 
-                        <?php $hugatree_text = $hugatree('hug_a_tree_text'); ?>
+                        <?php $hugatree_text = get_field('hug_a_tree_text'); ?>
                         <?php if ($hugatree_text) : ?>
                             <p><?php _e($hugatree_text); ?></p>
                         <?php endif; ?>
@@ -105,14 +105,14 @@
                 <!-- adventure smart -->
                 <div class="program-card">
                     <div class="adventuresmart-content">
-                        <?php $adventuresmart_title = $adventuresmart('adventuresmart_title'); ?>
+                        <?php $adventuresmart_title = get_field('adventuresmart_title'); ?>
                         <?php if ($adventuresmart_title) : ?>
                             <h4><?php _e($adventuresmart_title); ?></h4>
                         <?php endif; ?>
 
 
 
-                        <?php $adventuresmart_text = $adventuresmart_text('adventuresmart_text'); ?>
+                        <?php $adventuresmart_text = get_field('adventuresmart_text'); ?>
                         <?php if ($adventuresmart_text) : ?>
                             <p><?php _e($adventuresmart_text); ?></p>
                         <?php endif; ?>
