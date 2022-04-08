@@ -435,3 +435,35 @@ textarea {
 .program-single-section-one li {
   margin-bottom: 1rem;
 }
+
+
+.donate{
+	display:flex;
+		flex-wrap:wrap;
+}
+
+.donate-cheque{
+	display:flex;
+	flex-direction:column;
+	
+	width:50%;
+	padding:2%;
+	align-items:center;
+}
+.donate-cheque p{
+	width:48%;
+	padding-top:2%;
+}
+.donate-online{
+	width:50%;
+	padding:2%;
+}
+.donate-online h3{
+	padding-bottom:2%;
+}
+
+#give-form-277-wrap{
+	
+	width 50%;
+	align-content:right;
+}
