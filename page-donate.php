@@ -38,10 +38,10 @@ get_header();
         </section>
 
 
-        <!-- Who we are -->
+
         <section class="donate">
 
-            <!-- who we are  -->
+            <!-- by cheque -->
             <div class="donate-cheque">
 
                 <!-- Title -->
@@ -56,6 +56,37 @@ get_header();
                     <p> <?php _e($cheque_text); ?></p>
                 <?php endif; ?>
 
+                <div class="adress">
+                    <!-- name -->
+                    <?php $orgname_text = get_field('oragnization_name'); ?>
+                    <?php if ($orgname_text) : ?>
+                        <p> <?php _e($orgname_text); ?></p>
+                    <?php endif; ?>
+
+                    <!-- adress1 -->
+                    <?php $adress1_text = get_field('adress_line_1'); ?>
+                    <?php if ($adress1_text) : ?>
+                        <p> <?php _e($adress1_text); ?></p>
+                    <?php endif; ?>
+
+                    <!-- adress2 -->
+                    <?php $adress2_text = get_field('adress_line_2'); ?>
+                    <?php if ($adress2_text) : ?>
+                        <p> <?php _e($adress2_text); ?></p>
+                    <?php endif; ?>
+
+                    <!-- postal code -->
+                    <?php $postalcode_text = get_field('postal_code'); ?>
+                    <?php if ($postalcode_text) : ?>
+                        <p> <?php _e($postalcode_text); ?></p>
+                    <?php endif; ?>
+
+                    <!-- city and province -->
+                    <?php $city_text = get_field('city_and_province'); ?>
+                    <?php if ($city_text) : ?>
+                        <p> <?php _e($city_text); ?></p>
+                    <?php endif; ?>
+                </div>
             </div>
 
             <!-- what we do   -->

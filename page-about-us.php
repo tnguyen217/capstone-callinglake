@@ -69,92 +69,133 @@ get_header();
             </div>
         <?php endif; ?>
 
-        <section class=" about-us cards">
-            <div class="about-us-card card1">
-                <div class="card-img">
-                    <?php $swiftwaterimg = get_field('swift_water_img'); ?>
-                    <?php if ($swiftwaterimg) : ?>
-                        <img src="<?php print_r(esc_url($img_url)); ?>">
-                    <?php endif; ?>
-                </div>
+        <!-- swift water -->
 
-                <div class="card-content">
-                    <!-- Title -->
-                    <?php $swiftwatertitle = get_field('swift_water_title'); ?>
-                    <?php if ($swiftwatertitle) : ?>
-                        <h4><?php _e($swiftwatertitle); ?></h4>
-                    <?php endif; ?>
-                    <!-- Text -->
-                    <?php $swiftwatertext = get_field('swift_water_description'); ?>
-                    <?php if ($swiftwatertext) : ?>
-                        <p><?php _e($swiftwatertext); ?></p>
-                    <?php endif; ?>
-                </div>
-            </div>
+        <section class=" about-us program-card">
 
-            <div class="about-us-card card2">
-                <div class="card-img">
-                    <?php $stillwaterimg = get_field('still_water_img'); ?>
-                    <?php if ($stillwaterimg) : ?>
-                        <img src="<?php print_r(esc_url($img_url)); ?>">
+            <?php $swiftwater_img = get_field('swift_water_img'); ?>
+            <?php if ($swiftwater_img) : ?>
+                <?php
+                $img_url = $swiftwater_img['url'];
+                ?>
+                <div class="program-card-img">
+                    <img src="<?php print_r(esc_url($img_url)); ?>">
                 </div>
             <?php endif; ?>
-            <div class="card-content">
+
+            <!-- Card Info -->
+            <div class="program-card-info">
                 <!-- Title -->
-                <?php $stillwatertitle = get_field('still_water_title'); ?>
-                <?php if ($stillwatertitle) : ?>
-                    <h4><?php _e($stillwatertitle); ?></h4>
+                <?php $swiftwater_title = get_field('swift_water_title'); ?>
+                <?php if ($swiftwater_title) : ?>
+                    <h4><?php _e($swiftwater_title); ?></h4>
                 <?php endif; ?>
                 <!-- Text -->
-                <?php $stillwatertext = get_field('still_water_description'); ?>
-                <?php if ($stillwatertext) : ?>
-                    <p><?php _e($stillwatertext); ?></p>
+                <?php $swiftwater_text = get_field('swift_water_description'); ?>
+                <?php if ($swiftwater_text) : ?>
+                    <p><?php _e($swiftwater_text); ?></p>
                 <?php endif; ?>
-            </div>
-            </div>
 
-            <div class="about-us-card card3">
-                <div class="card-img">
-                    <?php $backcountryimg = get_field('backcountry_img'); ?>
-                    <?php if ($backcountryimg) : ?>
-                        <img src="<?php print_r(esc_url($img_url)); ?>">
+                <?php //get_template_part( 'template-parts/content', 'page' ); 
+                ?>
+            </div>
+        </section>
+
+        <!-- stillwater -->
+
+        <section class="about-us program-card">
+
+            <?php $stillwater_img = get_field('still_water_img'); ?>
+            <?php if ($stillwater_img) : ?>
+                <?php
+                $img_url = $stillwater_img['url'];
+                ?>
+                <div class="program-card-img">
+                    <img src="<?php print_r(esc_url($img_url)); ?>">
                 </div>
             <?php endif; ?>
-            <div class="card-content">
+
+            <!-- Card Info -->
+            <div class="program-card-info">
                 <!-- Title -->
-                <?php $backcountrytitle = get_field('backcountry_title'); ?>
-                <?php if ($backcountrytitle) : ?>
-                    <h4><?php _e($backcountrytitle); ?></h4>
+                <?php $stillwater_title = get_field('still_water_title'); ?>
+                <?php if ($stillwater_title) : ?>
+                    <h4><?php _e($stillwater_title); ?></h4>
                 <?php endif; ?>
                 <!-- Text -->
-                <?php $backcountrytext = get_field('backcountry_description'); ?>
-                <?php if ($backcountrytext) : ?>
-                    <p><?php _e($backcountrytext); ?></p>
+                <?php $stillwater_text = get_field('still_water_description'); ?>
+                <?php if ($stillwater_text) : ?>
+                    <p><?php _e($stillwater_text); ?></p>
                 <?php endif; ?>
-            </div>
+
+                <?php //get_template_part( 'template-parts/content', 'page' ); 
+                ?>
             </div>
 
-            <div class="about-us-card card4">
-                <div class="card-img">
-                    <?php $droneimg = get_field('drone_img'); ?>
-                    <?php if ($droneimg) : ?>
-                        <img src="<?php print_r(esc_url($img_url)); ?>">
+        </section>
+
+
+        <!-- backcountry rescue -->
+
+        <section class=" about-us program-card">
+
+            <?php $backcountry_img = get_field('backcountry_img'); ?>
+            <?php if ($backcountry_img) : ?>
+                <?php
+                $img_url = $backcountry_img['url'];
+                ?>
+                <div class="program-card-img">
+                    <img src="<?php print_r(esc_url($img_url)); ?>">
                 </div>
             <?php endif; ?>
-            <div class="card-content">
+
+            <!-- Card Info -->
+            <div class="program-card-info">
+                <!-- Title -->
+                <?php $backcountry_title = get_field('backcountry_title'); ?>
+                <?php if ($backcountry_title) : ?>
+                    <h4><?php _e($backcountry_title); ?></h4>
+                <?php endif; ?>
+                <!-- Text -->
+                <?php $backcountry_text = get_field('backcountry_description'); ?>
+                <?php if ($backcountry_text) : ?>
+                    <p><?php _e($backcountry_text); ?></p>
+                <?php endif; ?>
+
+                <?php //get_template_part( 'template-parts/content', 'page' ); 
+                ?>
+            </div>
+        </section>
+
+        <!-- drone searches -->
+
+        <section class="program-card">
+
+            <?php $drone_img = get_field('drone_img'); ?>
+            <?php if ($drone_img) : ?>
+                <?php
+                $img_url = $drone_img['url'];
+                ?>
+                <div class="program-card-img">
+                    <img src="<?php print_r(esc_url($img_url)); ?>">
+                </div>
+            <?php endif; ?>
+
+            <!-- Card Info -->
+            <div class="program-card-info">
                 <!-- Title -->
                 <?php $dronetitle = get_field('drone_title'); ?>
                 <?php if ($dronetitle) : ?>
                     <h4><?php _e($dronetitle); ?></h4>
                 <?php endif; ?>
                 <!-- Text -->
-                <?php $dronetext = get_field('drone_description'); ?>
-                <?php if ($dronetext) : ?>
-                    <p><?php _e($dronetext); ?></p>
+                <?php $drone_text = get_field('drone_description'); ?>
+                <?php if ($drone_text) : ?>
+                    <p><?php _e($drone_text); ?></p>
                 <?php endif; ?>
-            </div>
-            </div>
-        </section>
 
+                <?php //get_template_part( 'template-parts/content', 'page' ); 
+                ?>
+            </div>
 
         </section>
