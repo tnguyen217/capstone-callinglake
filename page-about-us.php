@@ -53,7 +53,7 @@ get_header();
                 <!-- Text -->
                 <?php $whowearetext = get_field('who_we_are_text'); ?>
                 <?php if ($whowearetext) : ?>
-                    <?php _e($whowearetext); ?>
+                    <p> <?php _e($whowearetext); ?></p>
                 <?php endif; ?>
 
             </div>
@@ -73,10 +73,10 @@ get_header();
 
         <section class=" about-us program-card">
 
-            <?php $swiftwater_img = get_field('swift_water_img'); ?>
-            <?php if ($swiftwater_img) : ?>
+            <?php $swiftwater_image = get_field('swift_water_img'); ?>
+            <?php if ($swiftwater_image) : ?>
                 <?php
-                $img_url = $swiftwater_img['url'];
+                $img_url = $swiftwater_image['url'];
                 ?>
                 <div class="program-card-img">
                     <img src="<?php print_r(esc_url($img_url)); ?>">
@@ -96,8 +96,6 @@ get_header();
                     <p><?php _e($swiftwater_text); ?></p>
                 <?php endif; ?>
 
-                <?php //get_template_part( 'template-parts/content', 'page' ); 
-                ?>
             </div>
         </section>
 
@@ -128,8 +126,6 @@ get_header();
                     <p><?php _e($stillwater_text); ?></p>
                 <?php endif; ?>
 
-                <?php //get_template_part( 'template-parts/content', 'page' ); 
-                ?>
             </div>
 
         </section>
@@ -161,15 +157,12 @@ get_header();
                 <?php if ($backcountry_text) : ?>
                     <p><?php _e($backcountry_text); ?></p>
                 <?php endif; ?>
-
-                <?php //get_template_part( 'template-parts/content', 'page' ); 
-                ?>
             </div>
         </section>
 
         <!-- drone searches -->
 
-        <section class="program-card">
+        <section class="about-us program-card">
 
             <?php $drone_img = get_field('drone_img'); ?>
             <?php if ($drone_img) : ?>
@@ -194,8 +187,6 @@ get_header();
                     <p><?php _e($drone_text); ?></p>
                 <?php endif; ?>
 
-                <?php //get_template_part( 'template-parts/content', 'page' ); 
-                ?>
             </div>
 
         </section>

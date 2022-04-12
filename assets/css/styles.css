@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@kcastor 
-tnguyen217
-/
-capstone-callinglake
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-capstone-callinglake/assets/css/styles.css
-@Max4str
-Max4str adjusted line height on mobile header navigation
-Latest commit 1715ecc 8 hours ago
- History
- 3 contributors
-@tnguyen217@Max4str@kcastor
-1312 lines (1170 sloc)  21.4 KB
-   
 * {
   font-size: 100%;
 }
@@ -768,6 +739,26 @@ input[type=submit] {
   margin-bottom: 2.25rem;
 }
 
+.home .whoweare,
+.who-we-are,
+.what-we-do,
+.donate-cheque,
+.donate-online{
+  padding:3%;
+}
+.home .whoweare h3,
+.who-we-are h3,
+.what-we-do h3,
+.adress{
+text-align: center;
+}
+
+.about-us h4{
+  background-color: #8aa3de;
+  text-align: center;
+  padding: 3%;
+
+}
 @media screen and (min-width: 520px) {
   .banner-img {
     height: 26.25rem;
@@ -921,6 +912,18 @@ input[type=submit] {
   .program-single-section-two ul {
     margin-bottom: 0;
   }
+
+    .home-map{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.home-cards{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 }
 @media screen and (min-width: 1024px) {
   .banner,
@@ -1331,13 +1334,6 @@ input[type=submit] {
     margin-bottom: 1.75rem;
   }
 
-  .program-card {
-    margin-bottom: 6rem;
-  }
-
-  .program-card-img {
-    height: 35rem;
-  }
 
   .donate{
 	display:flex;
@@ -1369,31 +1365,15 @@ input[type=submit] {
 	width:70%;
 	align-content:right;
 }
-
-
-
-.who-we-are{
-	width:50%;
-
+.whoweare-container{
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.about-us-card {
-  background-color: #fff;
-  margin-bottom: 2.25rem;
-  border-radius: 3px;
-  box-shadow: 0 2px 8px rgba(86, 86, 86, 0.15);
+.who-we-are h3{
+  text-align: left;
 }
-
-.card-img {
-  height: 16.25rem;
-}
-.card-img img {
-  border-radius: 3px 3px 0 0;
-}
-
-.card-content{
-  padding: 2.25rem 1.5rem;
-	width:50%;
+.who-we-are p{
+  width: 50%;
 }
 }
 @media screen and (min-width: 1760px) {
