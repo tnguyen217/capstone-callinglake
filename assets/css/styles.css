@@ -331,6 +331,10 @@ header .menu-item-154 a:hover, header .menu-item-154 a:focus {
   color: #0b6847;
 }
 
+.contact-map {
+  padding-top: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .contact-us form {
     display: grid;
@@ -375,6 +379,10 @@ header .menu-item-154 a:hover, header .menu-item-154 a:focus {
   .contact-grid .contact-map {
     grid-column: 3/5;
     margin-top: 3.6rem;
+  }
+
+  .contact-map {
+    padding-top: 0rem;
   }
 }
 footer {
@@ -739,26 +747,6 @@ input[type=submit] {
   margin-bottom: 2.25rem;
 }
 
-.home .whoweare,
-.who-we-are,
-.what-we-do,
-.donate-cheque,
-.donate-online{
-  padding:3%;
-}
-.home .whoweare h3,
-.who-we-are h3,
-.what-we-do h3,
-.adress{
-text-align: center;
-}
-
-.about-us h4{
-  background-color: #8aa3de;
-  text-align: center;
-  padding: 3%;
-
-}
 @media screen and (min-width: 520px) {
   .banner-img {
     height: 26.25rem;
@@ -798,9 +786,7 @@ text-align: center;
 .join-us,
 .programs,
 .program-single,
-.gallery,
-.about,
-.donate {
+.gallery {
     padding: 0 2rem;
     margin-bottom: 6rem;
   }
@@ -912,18 +898,6 @@ text-align: center;
   .program-single-section-two ul {
     margin-bottom: 0;
   }
-
-    .home-map{
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
-}
-
-.home-cards{
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
 }
 @media screen and (min-width: 1024px) {
   .banner,
@@ -931,9 +905,7 @@ text-align: center;
 .training,
 .join-us,
 .join-us form,
-.program-card,
-.about-us-card,
-.donate {
+.program-card {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
@@ -1053,33 +1025,6 @@ text-align: center;
   .banner-single p {
     margin-bottom: 1.75rem;
   }
-
-
-
-
-  .about-us-card {
-    margin-bottom: 3rem;
-  }
-
-  .about-us-card-img {
-    grid-column: 1/7;
-  }
-
-  .card-content {
-    grid-column: 7/-1;
-    padding: 0 3rem;
-  }
-
-  .about-us-card:last-of-type .card-img {
-    grid-column: 7/-1;
-  }
-  .about-us-card:last-of-type .card-content {
-    grid-column: 1/7;
-    padding: 0 3rem;
-  }
-
-
-
 }
 @media screen and (min-width: 1200px) {
   .banner,
@@ -1217,27 +1162,6 @@ text-align: center;
     grid-row: 1/span 2;
     height: 32.5rem;
   }
-
-  .about-us-card {
-    margin-bottom: 5rem;
-  }
-
-  .card-content {
-    grid-column: 8/-2;
-    padding: 0;
-  }
-
-  .card-img img {
-    height: 30rem;
-  }
-
-  .program-card:last-of-type .card-content {
-    grid-column: 2/6;
-    padding: 0;
-  }
-
-
-
 }
 @media screen and (min-width: 1440px) {
   .banner,
@@ -1334,47 +1258,13 @@ text-align: center;
     margin-bottom: 1.75rem;
   }
 
+  .program-card {
+    margin-bottom: 6rem;
+  }
 
-  .donate{
-	display:flex;
-		flex-wrap:wrap;
-}
-
-.donate-cheque{
-	display:flex;
-	flex-direction:column;
-	
-	width:50%;
-	padding:2%;
-	align-items:center;
-}
-.donate-cheque p{
-	width:70%;
-	padding-top:2%;
-}
-.donate-online{
-	width:50%;
-	padding:2%;
-}
-.donate-online h3{
-	padding-bottom:2%;
-}
-
-#give-form-277-wrap{
-	
-	width:70%;
-	align-content:right;
-}
-.whoweare-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-.who-we-are h3{
-  text-align: left;
-}
-.who-we-are p{
-  width: 50%;
-}
+  .program-card-img {
+    height: 35rem;
+  }
 }
 @media screen and (min-width: 1760px) {
   .banner,
